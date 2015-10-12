@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 col-md-offset-3">
+            <h1>Ajax Recipe Posting App</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3" id="recipe-form">
+            <h2>Make a Recipe</h2>
+            <%= link_to new_recipe_path, remote: true do %>
+            <button class="btn btn-sm btn-primary" id="new-form">New Recipe</button>
+            <% end %>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div id="recipes-holder">
+                <%= render @recipes %>
+            </div>
+        </div>
+    </div>
+</div>

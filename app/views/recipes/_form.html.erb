@@ -1,0 +1,5 @@
+<%= simple_form_for(@recipe, remote: true) do |f| %>
+    <%= f.input :name, placeholder: "" %>
+    <%= f.input :content %>
+    <%= f.button :submit%>
+<% end %>

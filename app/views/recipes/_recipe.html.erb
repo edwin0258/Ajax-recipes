@@ -1,0 +1,10 @@
+<div class="well">
+    <h2><%= recipe.name %></h2>
+    <p><%= recipe.content %></p>
+    <%= link_to edit_recipe_path(recipe), remote: true do %>
+        <button class="btn btn-sm btn-info">Edit</button>
+    <% end %>
+    <%= link_to recipe_path(recipe), remote: true, method: :delete do %>
+        <button class="btn btn-sm btn-danger">Delete</button>
+    <% end %>
+</div>
